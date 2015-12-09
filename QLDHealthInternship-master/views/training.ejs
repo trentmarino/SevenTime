@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>Hey There</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="stylesheets/style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Signin CSS -->
+
+</head>
+<body>
+<div id="header">
+    <button id="showMenu" type="button" class="btn btn-default" aria-label="Left Align">
+        <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+    </button>
+    <h1 id="title">Training</h1>
+
+</div>
+
+<body>
+<div id="mainMenu" class="hidden">
+
+    <ul class="nav nav-stacked">
+        <li><a href="/">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="notice">News</a></li>
+        <li><a href="index.ejs">Videos</a></li>
+        <li><a href="training">Training</a></li>
+        <li><a href="index.ejs">Go Live</a></li>
+        <li><a href="index.ejs">Contact/Feedback</a></li>
+    </ul>
+
+</div>
+<%- include post %>
+
+</body>
+
+<script>
+
+    $('#showMenu').click(function(){
+        if($('#mainMenu').hasClass('hidden')){
+            $('#mainMenu').removeClass('hidden').addClass('visible');
+            $('#mainMenu').addClass('color');
+            $('#mainMenu').animate({left: '0'}, 1000);
+        }else{
+            $('#mainMenu').animate({left: '-300px'}, 1000);
+            setTimeout( function(){
+                $('#mainMenu').removeClass('visible').addClass('hidden');
+            }, 1000);
+        }
+    });
+
+</script>
+
+
+</html>

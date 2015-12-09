@@ -1,0 +1,140 @@
+body {
+  padding: 0;
+  font: 35px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a:link {
+  color: rgb(203,223,237);
+}
+a:visited{
+  color: rgb(203,223,237);
+
+}
+.color{
+  background-color: rgb(31, 73, 125);
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#mainMenu{
+  z-index: 53000;
+  position: absolute;
+  left: -300px;
+  color: rgb(203,223,237);
+  text-wrap: normal;
+  padding-right: 1%;
+  width: 70%;
+  height: 88%;
+  font-size: 20px;
+  overflow: auto;
+
+}
+
+#title{
+ position: absolute;
+  left: 70px;
+  top:3px;
+}
+#otherTitles{
+  margin-left: 8%;
+}
+#showMenu{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  height: 55px;
+  padding: 0px;
+}
+.glyphicon{
+  font-size: 25px;
+  align-text: center;
+  margin: 0;
+}
+
+#header {
+  background-color: rgb(31, 73, 125);
+  width: 100%;
+  height: 15%;
+}
+#header h1, #header button{
+  color: rgb(203,223,237);
+
+}
+#header button{
+  background-color: rgb(31, 73, 125);
+}
+#newsPanel {
+  margin-left: 1%;
+  margin-right: 3%;
+  padding-right: 2%;
+
+
+
+}
+.carousel-caption a{
+  bottom: 0;
+  top: auto;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-color: black;
+}
+#homePageContainerTitle{
+  padding: 2%;
+  color: white;
+  margin-bottom: -1%;
+
+}
+#newsButton{
+  width: 100%;
+font-size: 15px;
+  height: 8%;
+  margin-top: 2%;
+  position: relative;
+  text-align: left;
+  background-color: rgb(203,223,237);
+
+}
+
+
+#AboutUsImg{
+  margin-top: 1%;
+  width: 85%;
+}
+#homePageContainer{
+  width: 100%;
+  height: 9%;
+margin-top: 5%;
+  background-color: rgb(31, 73, 125);
+  position: relative;
+}
+
+#directionIcons{
+  float: right;
+}
+
+
+#myCarousel{
+  position: relative;
+  margin-bottom: 5%;
+}
+#newsTitle{
+  margin-left: 2%;
+  margin-right: 3%;
+
+
+}
+#newsContent{
+  margin-left: 3%;
+  margin-right: 3%;
+
+}
+#newsAuthor{
+  margin-left: 3%;
+  margin-right: 3%;
+
+
+}
