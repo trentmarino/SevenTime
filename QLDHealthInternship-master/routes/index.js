@@ -9,6 +9,9 @@ var gridder = require('../DAO/gridder');
 router.get('/', function(req, res, next) {
     res.render('index');
 });
+router.get('/contact', function(req, res, next) {
+    res.render('contact');
+});
 router.get('/training', function(req, res, next) {
     DAO.pullTable(function(myDocs){
         console.log(JSON.stringify(myDocs[0]));

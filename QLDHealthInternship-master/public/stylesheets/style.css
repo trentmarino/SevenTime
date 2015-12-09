@@ -68,6 +68,15 @@ a:visited{
 #header button{
   background-color: rgb(31, 73, 125);
 }
+.carousel-caption{
+/*  background: rgb(54, 25, 25); /!* Fall-back for browsers that don't
+                                    support rgba *!/
+  background: rgba(54, 25, 25, .5);
+height: 70%;
+border:solid;*/
+}
+
+
 #newsPanel {
   margin-left: 1%;
   margin-right: 3%;
@@ -77,8 +86,7 @@ a:visited{
 
 }
 .carousel-caption a{
-  bottom: 0;
-  top: auto;
+  bottom: 30px;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-color: black;
 }
@@ -86,7 +94,6 @@ a:visited{
   padding: 2%;
   color: white;
   margin-bottom: -1%;
-
 }
 #newsButton{
   width: 100%;
